@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase Online Store</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1 id="storeTitle">ShopEase Online Store</h1>
+    <p>Interactive Shopping Experience</p>
+
+    <nav>
+        <button id="themeBtn">Switch Theme</button>
+        <button id="menuBtn">Show Menu</button>
+    </nav>
+</header>
+
+
+<div class="container">
+
+    <!-- Feedback Message -->
+    <div id="message"></div>
+
+
+    <!-- Products -->
+    <h2>Our Products</h2>
+
+    <div class="product-section">
+
+        <div class="product">
+
+            <img
+                class="productImage"
+                src="Laptop.jpg"
+                alt="Laptop"
+            >
+
+            <h3>Laptop</h3>
+
+            <p class="price">₹55,000</p>
+
+            <button class="buyBtn">Add to Cart</button>
+
+        </div>
+
+
+        <div class="product">
+
+            <img
+                class="productImage"
+                src="iphone.webp"
+                alt="Mobile Phone"
+            >
+
+            <h3>Smartphone</h3>
+
+            <p class="price">₹25,000</p>
+
+            <button class="buyBtn">Add to Cart</button>
+
+        </div>
+
+
+        <div class="product">
+
+            <img
+                class="productImage"
+                src="headphone.webp"
+                alt="Headphones"
+            >
+
+            <h3>Headphones</h3>
+
+            <p class="price">₹3,000</p>
+
+            <button class="buyBtn">Add to Cart</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Dynamic Menu -->
+    <div id="dynamicMenu"></div>
+
+
+    <!-- Categories -->
+    <div class="form-section">
+
+        <h2>Shopping Categories</h2>
+
+        <ul id="categoryList">
+            <li>Electronics</li>
+            <li>Mobiles</li>
+            <li>Accessories</li>
+        </ul>
+
+        <button id="addCategoryBtn">Add Category</button>
+        <button id="removeCategoryBtn">Remove Category</button>
+
+    </div>
+
+
+    <!-- Customer Form -->
+    <div class="form-section">
+
+        <h2>Customer Information</h2>
+
+        <form id="customerForm">
+
+            <label for="name">Name:</label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+
+
+            <label for="email">Email:</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+
+            <label for="category">Select Category:</label>
+
+            <select id="category">
+
+                <option value="">-- Select --</option>
+
+                <option value="Electronics">
+                    Electronics
+                </option>
+
+                <option value="Mobiles">
+                    Mobiles
+                </option>
+
+                <option value="Accessories">
+                    Accessories
+                </option>
+
+            </select>
+
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- Image Preview -->
+    <div class="form-section">
+
+        <h2>Image Preview</h2>
+
+        <input
+            type="file"
+            id="imageInput"
+            accept="image/*"
+        >
+
+        <img id="preview" alt="Image Preview">
+
+    </div>
+
+
+    <!-- Live Content -->
+    <div class="form-section">
+
+        <h2>Live Message</h2>
+
+        <input
+            type="text"
+            id="liveInput"
+            placeholder="Type something..."
+        >
+
+        <p id="liveOutput">
+            Your message will appear here.
+        </p>
+
+    </div>
+
+</div>
+
+
+<footer>
+    <p>© 2026 ShopEase Online Store</p>
+</footer>
+
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
